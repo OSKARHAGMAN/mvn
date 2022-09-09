@@ -7,4 +7,10 @@ public class fooTest {
         int result = foo.fooBar(1, 1);
         Assertions.assertEquals(2, result);
     }
+
+    @Test
+    void fooTestFail() {
+        int result = foo.fooBar(1, 3);
+        Assertions.assertEquals(4, result);
+    }
 }
